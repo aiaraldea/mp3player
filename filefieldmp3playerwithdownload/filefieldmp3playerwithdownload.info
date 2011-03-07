@@ -1,0 +1,8 @@
+; $Id
+name = FileField MP3 Player Formatter with download
+description = "Formats an MP3 file into the MP3 Player with download."
+dependencies[] = filefield
+dependencies[] = mp3player
+dependencies[] = filefieldmp3player
+package = CCK
+core = 6.x

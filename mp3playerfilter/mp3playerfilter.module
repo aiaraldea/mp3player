@@ -1,0 +1,28 @@
+<?php
+
+// $Id
+
+/**
+ * Implementation of hook_filter()
+ */
+function mp3playerfilter_filter($op, $delta = 0, $format = -1, $text = '') {
+
+  switch ($op) {
+    case 'list':
+      return array(
+          0 => t('Mp3 player filter'),
+      );
+    case 'description':
+      return t('Filter to add mp3 files with a player');
+    case 'settings':
+      break;
+    case 'no cache':
+      return FALSE;
+    case 'prepare':
+      return $text;
+    case 'process':
+      return $text;
+    default:
+      return $text;
+  }
+}

@@ -1,0 +1,6 @@
+; $Id
+name = MP3 Player Input Filter
+description = "Inserts an MP3 file using an input filter."
+dependencies[] = mp3player
+package = Media
+core = 6.x
